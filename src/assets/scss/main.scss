@@ -1,0 +1,72 @@
+@import "./base.scss";
+@import "./atom.scss";
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+  padding: 4px;
+}
+
+button.icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &.disabled {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(0%) saturate(1185%) hue-rotate(167deg)
+      brightness(91%) contrast(109%);
+
+    pointer-events: none;
+  }
+}
+
+button.first {
+  background-image: url("@/assets/icons/first.svg");
+}
+
+button.prev {
+  background-image: url("@/assets/icons/prev.svg");
+}
+
+button.next {
+  background-image: url("@/assets/icons/next.svg");
+}
+
+button.last {
+  background-image: url("@/assets/icons/last.svg");
+}
+
+.no-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn-bullet {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+
+  &.active {
+    background-color: black;
+  }
+}
+
+.btn-default {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background-color: white;
+}
+
+.card-shadow {
+  box-shadow: 0 1px 8px 0 rgba(110, 110, 110, 0.1);
+}

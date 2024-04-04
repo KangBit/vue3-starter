@@ -1,0 +1,1 @@
+export const DEFAULT_INTERVAL_DELAY = 3000;
